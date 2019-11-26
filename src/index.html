@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Calistoga&display=swap"
+      rel="stylesheet"
+    />
+    <title>Calvin's Bookmarks App</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>My Bookmarks</h1>
+      <form class="new-bookmark js-new-bookmark-form">
+        <button class="js-add-bm" id="add-bm-button">
+          <i class="fa fa-plus"></i> <i class="fa fa-bookmark"></i>
+        </button>
+        <select class="filter-select" name="rating" id="rating-filter">
+          <option value="0" id="0">Filter by minimum rating</option>
+          <option value="5" id="5">5 Star Rating</option>
+          <option value="4" id="4">4+ Rating</option>
+          <option value="3" id="3">3+ Rating</option>
+          <option value="2" id="2">2+ Rating</option>
+          <option value="1" id="1">Show All</option>
+        </select>
+      </form>
+    </header>
+    <main class="container">
+      <ul class="bookmarks-list js-bookmarks-list"></ul>
+    </main>
+  </body>
+</html>
